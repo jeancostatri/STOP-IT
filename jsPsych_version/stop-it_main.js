@@ -306,7 +306,7 @@ var block_feedback = {
         // calculate performance measures
         var ns_trials = jsPsych.data.get().filter({
             trial_type: 'custom-stop-signal-plugin',
-            block_i: block_ind,
+            //block_i: block_ind,
             signal: 'no'
         });
 
