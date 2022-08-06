@@ -330,6 +330,8 @@ var block_feedback = {
             block_i: block_ind,
             signal: 'yes'
         });
+        
+        console.log(ss_trials.count());
 
         var prop_ss_Correct = Math.round(ss_trials.filter({
             correct: true
