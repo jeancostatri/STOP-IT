@@ -309,6 +309,8 @@ var block_feedback = {
             //block_i: block_ind,
             signal: 'no'
         });
+        
+        console.log(ns_trials.count());
 
         var avg_nsRT = Math.round(ns_trials.select('rt').subset(function (x) {
             return x > 0;
@@ -327,7 +329,7 @@ var block_feedback = {
 
         var ss_trials = jsPsych.data.get().filter({
             trial_type: 'custom-stop-signal-plugin',
-            block_i: block_ind,
+            //block_i: block_ind,
             signal: 'yes'
         });
         
